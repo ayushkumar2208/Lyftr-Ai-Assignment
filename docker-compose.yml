@@ -1,0 +1,27 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+
+    container_name: lyftr-backend
+
+    ports:
+      - "8000:8000"
+
+    environment:
+      APP_ENV: production
+      LLM_MODEL: ${LLM_MODEL}
+      LLM_API_KEYS: ${LLM_API_KEYS}
+      DATABASE_URL: sqlite+aiosqlite:////data/app.db
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS}
+      ENABLE_FAILURE_SIMULATION: ${ENABLE_FAILURE_SIMULATION}
+
+    volumes:
+      - sqlite_data:/data
+
+    restart: unless-stopped
+
+
+volumes:
+  sqlite_data:

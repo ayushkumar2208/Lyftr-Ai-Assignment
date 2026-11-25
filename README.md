@@ -9,10 +9,10 @@ The application demonstrates reliable LLM integration with **multi-key failover,
 ## Live URLs
 
 ### Frontend
-**URL:** `ADD_YOUR_VERCEL_FRONTEND_URL_HERE`
+**URL:** https://lyftr-ai-assignment-delta.vercel.app/
 
 ### Backend API
-**URL:** `ADD_YOUR_BACKEND_URL_HERE`
+**URL:** https://lyftr-ai-assignment-ynen-6tht0c1be-ayush-kumar19.vercel.app/
 
 ### GitHub Repository
 **URL:** https://github.com/ayushkumar2208/Lyftr-Ai-Assignment
